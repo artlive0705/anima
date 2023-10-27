@@ -1,0 +1,339 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous")
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer")
+        link(rel="stylesheet" href="css/main.css")
+        title Document
+    body 
+        header.header 
+            .container 
+                .row
+                    .col-md-3 
+                        .header__logo 
+                            a(href="#")
+                                img(src="image/logo.png", alt="logo")
+                    .col-md-6 
+                        .header__menu 
+                            ul
+                                li
+                                    a(href="#") Home
+                                li
+                                    a(href="#") Feature
+                                li
+                                    a(href="#") About
+                                li
+                                    a(href="#") Produc
+                        .header__bars 
+                            i(class="fa-solid fa-bars" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions")        
+                        #offcanvasWithBothOptions.offcanvas.offcanvas-start(data-bs-scroll='true' tabindex='-1' aria-labelledby='offcanvasWithBothOptionsLabel')
+                            .offcanvas-header
+                                img(src='image/logo.png' alt='logo')
+                                a(href='#')
+                                    i.fa-regular.fa-circle-xmark(style=' color: orange;' data-bs-dismiss='offcanvas' aria-label='Close')
+                            .offcanvas-body
+                                ul
+                                    li
+                                        a(href='#') Home
+                                    li
+                                        a(href='#') Feature
+                                    li
+                                        a(href='#') About
+                                    li
+                                        a(href='#') Product
+                                button.bn Read more
+                    .col-md-3
+                        .header__btn
+                            button.bn(data-bs-toggle='modal' data-bs-target='#exampleModal') shop now 
+        section.home
+            .container
+                .row 
+                    .col-md-5
+                        .home__content
+                            .home__desc 
+                                span Look Stylish Be Stylish.
+                            .home__title 
+                                h1 Look Stylish Be
+                                img(src="image/image heading.png", alt="heading")
+                            .home__paragrf  
+                                p Before starting this business you should have ideas about the market and products to Compete with the Existing Businesses
+                            .home__btn
+                                button.bn(data-bs-toggle="modal" data-bs-target="#exampleModal") join shop
+                                img(src="image/Cta.png", alt="30%")
+                    .col-md-7 
+                        .home__imagelar 
+                            .home__image 
+                                img(src="image/image (24).png", alt="qizcha")
+                            .home__img 
+                                img(src="image/background image.png", alt="orqa")
+        section.test
+            .container
+                .row 
+                    ul.nav.nav-underline
+                        li.nav-item
+                            a#one-tab.nav-link.active(aria-current='page' data-bs-toggle='tab' data-bs-target='#one-tab-pane' type='button' role='tab' aria-controls='one-tab-pane' aria-selected='true') water resistant
+                        li.nav-item
+                            a#two-tab.nav-link(data-bs-toggle='tab' data-bs-target='#two-tab-pane' type='button' role='tab' aria-controls='two-tab-pane' aria-selected='false') charging system
+                        li.nav-item
+                            a#three-tab.nav-link(data-bs-toggle='tab' data-bs-target='#three-tab-pane' type='button' role='tab' aria-controls='three-tab-pane' aria-selected='false') artificial leather
+                        li.nav-item
+                            a#four-tab.nav-link(data-bs-toggle='tab' data-bs-target='#four-tab-pane' type='button' role='tab' aria-controls='four-tab-pane' aria-selected='false') modern clothes
+                    #myTabContent.tab-content
+                        #one-tab-pane.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='one-tab' tabindex='0')
+                            .row
+                                .col-lg-3.col-md-6.col-sm-6
+                                    .test__content
+                                        .test__image
+                                            img(src='image/image (25).png' alt='bag')  
+                                .col-lg-3.col-md-6.col-sm-6
+                                    .test__content
+                                        .test__image
+                                            img(src='image/Rectangle 45 (1).png' alt='bag')
+                                .col-lg-3.col-md-6.col-sm-6
+                                    .test__content
+                                        .test__image
+                                            img(src='image/laptop-backpack-for-men-womenschool-backpacks-for-college-travel-backpack-with-usb-port-1graypouch-ch17aysuauu-removebg 1.png' alt='bag')            
+                                .col-lg-3.col-md-6.col-sm-6
+                                    .test__content
+                                        .test__image
+                                            img(src='image/product-image-826191689_540x-removebg 1.png' alt='bag')
+                        #two-tab-pane.tab-pane.fade(role='tabpanel' aria-labelledby='two-tab' tabindex='0')
+                            .row
+                                .col-lg-3.col-md-6.col-sm-6
+                                    .test__content
+                                        .test__image
+                                            img(src='image/product-image-826191689_540x-removebg 1.png' alt='bag')
+                                .col-lg-3.col-md-6.col-sm-6
+                                    .test__content
+                                        .test__image
+                                            img(src='image/product-image-826191689_540x-removebg 1.png' alt='bag')
+                                .col-lg-3.col-md-6.col-sm-6
+                                    .test__content
+                                        .test__image
+                                            img(src='image/product-image-826191689_540x-removebg 1.png' alt='bag')
+                                .col-lg-3.col-md-6.col-sm-6
+                                    .test__content
+                                        .test__image
+                                            img(src='image/product-image-826191689_540x-removebg 1.png' alt='bag')
+                        #three-tab-pane.tab-pane.fade(role='tabpanel' aria-labelledby='three-tab' tabindex='0')
+                            .row
+                                .col-lg-3.col-md-6.col-sm-6
+                                    .test__content
+                                        .test__image
+                                            img(src='image/laptop-backpack-for-men-womenschool-backpacks-for-college-travel-backpack-with-usb-port-1graypouch-ch17aysuauu-removebg 1.png' alt='bag')
+                                .col-lg-3.col-md-6.col-sm-6
+                                    .test__content
+                                        .test__image
+                                            img(src='image/laptop-backpack-for-men-womenschool-backpacks-for-college-travel-backpack-with-usb-port-1graypouch-ch17aysuauu-removebg 1.png' alt='bag')
+                                .col-lg-3.col-md-6.col-sm-6
+                                    .test__content
+                                        .test__image
+                                            img(src='image/laptop-backpack-for-men-womenschool-backpacks-for-college-travel-backpack-with-usb-port-1graypouch-ch17aysuauu-removebg 1.png' alt='bag')
+                                .col-lg-3.col-md-6.col-sm-6
+                                    .test__content
+                                        .test__image
+                                            img(src='image/laptop-backpack-for-men-womenschool-backpacks-for-college-travel-backpack-with-usb-port-1graypouch-ch17aysuauu-removebg 1.png' alt='bag')
+                        #four-tab-pane.tab-pane.fade(role='tabpanel' aria-labelledby='four-tab' tabindex='0')
+                            .row
+                                .col-lg-3.col-md-6.col-sm-6
+                                    .test__content
+                                        .test__image
+                                            img(src='image/Rectangle 45 (1).png' alt='bag')       
+                                .col-lg-3.col-md-6.col-sm-6
+                                    .test__content
+                                        .test__image
+                                            img(src='image/Rectangle 45 (1).png' alt='bag')        
+                                .col-lg-3.col-md-6.col-sm-6
+                                    .test__content
+                                        .test__image
+                                            img(src='image/Rectangle 45 (1).png' alt='bag')        
+                                .col-lg-3.col-md-6.col-sm-6
+                                    .test__content
+                                        .test__image
+                                            img(src='image/Rectangle 45 (1).png' alt='bag') 
+        section.see
+            .container
+                .row 
+                    .col-md-7
+                        .see__image 
+                            img(src="image/Image (28).png", alt="bag")
+                    .col-md-5
+                        .see__content
+                            .see__desc
+                                span Creative bag only for you
+                            .see__title 
+                                h5 Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod.
+                            .see__paragrf
+                                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quasi, expedita fuga illo voluptas voluptatibus?Lorem ipsum dolor sit amet.
+                            .see__btn
+                                button.bn( data-bs-toggle="modal" data-bs-target="#exampleModal")  See More
+        section.cart
+            .container
+                .row 
+                    .col-md-12 
+                        .cart__title 
+                            h4 Our Available Product
+                        .cart__desc 
+                            p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur deleniti hic vel amet. Provident, nostrum.
+                    .col-lg-3.col-md-6.col-sm-6
+                        .bloc
+                            .cart__image 
+                                img(src="image/image (29).png", alt="1")                                    
+                    .col-lg-3.col-md-6.col-sm-6
+                        .blok
+                            .cart__image 
+                                img(src="image/image (30).png", alt="1")                                    
+                    .col-lg-3.col-md-6.col-sm-6
+                        .bloc
+                            .cart__image 
+                                img(src="image/image (31).png", alt="1")                                    
+                    .col-lg-3.col-md-6.col-sm-6
+                        .blok
+                            .cart__image 
+                                img(src="image/image (32).png", alt="1")                                    
+                    .col-lg-3.col-md-6.col-sm-6
+                        .blos
+                            .cart__image 
+                                img(src="image/image (33).png", alt="1")                                    
+                    .col-lg-3.col-md-6.col-sm-6
+                        .bloc
+                            .cart__image 
+                                img(src="image/image (34).png", alt="1")                                    
+                    .col-lg-3.col-md-6.col-sm-6
+                        .blos
+                            .cart__image 
+                                img(src="image/image (35).png", alt="1")                                    
+                    .col-lg-3.col-md-6.col-sm-6
+                        .blog
+                            .cart__image 
+                                img(src="image/image (36).png", alt="1") 
+                    .cart__btn
+                        button.bn.bn-white(data-bs-toggle='modal' data-bs-target='#exampleeModal') See More 
+                            i.fa-solid.fa-arrow-right-long
+                        #exampleeModal.modal.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
+                            .modal-dialog
+                                .modal-content
+                                    .modal-header
+                                        h4 YANGI KALEKSIYA
+                                        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                                    .modal-body
+                                        .row
+                                            .col-md-6
+                                                .modal-rasm
+                                                    img(src='image/image (29).png' alt='1')
+                                                    |                                             40$
+                                                    img(src='image/image (30).png' alt='1')
+                                                    |                                             29$
+                                            .col-md-6
+                                                .modal-rasm
+                                                    img(src='image/image (31).png' alt='1')
+                                                    |                                             45$
+                                                    img(src='image/image (32).png' alt='1')
+                                                    |                                             34$
+                                    .modal-footer
+                                        | Dont have an account? 
+                                        a(href='#') Create one
+                        #exampleModal.modal.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
+                            .modal-dialog
+                                .modal-content
+                                    .modal-header
+                                        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                                    .modal-body
+                                        h3 Sign In
+                                        form(action='#')
+                                            p.form-input
+                                                input.user(type='text' placeholder='Username')
+                                            p.form-input
+                                                input.password(type='password' placeholder='Password')
+                                            p.form-input
+                                                input(type='submit' value='Sign In')
+                                        a(href='#') Forgot Password?
+                                    .modal-footer
+                                        | Dont have an account? 
+                                        a(href='#') Create one
+        section.bag
+            .container
+                .row 
+                    .col-md-5
+                        .bag__image
+                            img(src="image/image (38).png", alt="bag")
+                    .col-md-7
+                        .bag__content
+                            .bag__title 
+                                h4 Lorem ipsum dolor sit amet consectetur adipisicing.
+                            .bag__input 
+                                form(action="#") 
+                                    input(type="text" placeholder="Name" required)  
+                                    input(type="email" name="email" placeholder="Email" required)
+                                    p.put 
+                                        input(type="text" name="adres" placeholder="Address")
+                                    input.name(type="checkbox" name="checkbox")
+                                    button.bn.bn-join(data-bs-toggle="modal" data-bs-target="#exampleModal") Join Now
+        section.swe
+            .container
+                .row 
+                    .col-lg-3.col-md-6.col-sm-6  
+                        .swe__image 
+                            img(src="image/Company logo.png", alt="1")
+                    .col-lg-3.col-md-6.col-sm-6  
+                        .swe__image 
+                            img(src="image/Company logo (1).png", alt="1")
+                    .col-lg-3.col-md-6.col-sm-6  
+                        .swe__image 
+                            img(src="image/Company logo (2).png", alt="1")
+                    .col-lg-3.col-md-6.col-sm-6  
+                        .swe__image 
+                            img(src="image/Company logo (3).png", alt="1")
+        footer.footer
+            .container
+                .row
+                    .col-lg-3.col-md-3.col-sm-6
+                        .footer__bloc 
+                            .footer__logo   
+                                img(src="image/logo.png", alt="logo")
+                            .footer__pargrf
+                                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, ab.
+                    .col-lg-3.col-md-3.col-sm-6
+                        .footer__bloc
+                            .footer__title
+                                span Special Catagories
+                            .footer__desc
+                                ul
+                                    li
+                                        a(href='#') Water resistant
+                                    li
+                                        a(href='#') Charging system
+                                    li
+                                        a(href='#') Artificial leather
+                    .col-lg-3.col-md-3.col-sm-6
+                        .footer__bloc
+                            .footer__title
+                                span Contact Us
+                            .footer__desc
+                                ul
+                                    li
+                                        a(href='tel:(808) 555-0111') (808) 555-0111
+                                    li
+                                        a(href='#') michelle.rivera@example.com
+                                    li
+                                        a(href='http://www.codehow.com') http://www.codehow.com
+                    .col-lg-3.col-md-3.col-sm-6
+                        .footer__bloc
+                            .footer__title
+                                span News Latter
+                            .footer__input
+                                .email
+                                    form(action='#')
+                                        input(type='email' placeholder='Enter Your Email')
+                                .yuborish
+                                    button.bn(data-bs-toggle='modal' data-bs-target='#exampleModal') Subscribe
+
+        script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous")
